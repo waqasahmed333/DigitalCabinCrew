@@ -1,0 +1,1108 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F739D0E0AD7394E552BEE7F /* Pods_PIA_Crew_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B880BCD0E1E5982AEC1421 /* Pods_PIA_Crew_App.framework */; };
+		840E4D901D80B02C00A82976 /* header.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840E4D8F1D80B02C00A82976 /* header.xib */; };
+		840E4D921D80B0FB00A82976 /* FlightsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E4D911D80B0FB00A82976 /* FlightsVC.swift */; };
+		840E4D961D80B3C400A82976 /* Header1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840E4D951D80B3C400A82976 /* Header1.xib */; };
+		840E4D981D80B3E600A82976 /* header2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840E4D971D80B3E600A82976 /* header2.xib */; };
+		841932531D0CA64F00A6CB3A /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841932521D0CA64F00A6CB3A /* FeedbackViewController.swift */; };
+		8424BE681D05C685005D1445 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424BE671D05C685005D1445 /* DetailTableViewCell.swift */; };
+		846978811D1C6D3600387B77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846978801D1C6D3600387B77 /* Assets.xcassets */; };
+		847902551D0C38AB001064B0 /* FormsDocumentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847902541D0C38AB001064B0 /* FormsDocumentTableViewCell.swift */; };
+		8487AA3F1D04367100429651 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487AA3E1D04367100429651 /* MasterViewController.swift */; };
+		8487AA411D04368000429651 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487AA401D04368000429651 /* DetailViewController.swift */; };
+		8487AA431D043BE700429651 /* MasterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487AA421D043BE700429651 /* MasterTableViewCell.swift */; };
+		8496B1A01D80B88800A92874 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496B19F1D80B88800A92874 /* TableViewCell.swift */; };
+		8496B1A21D80B89300A92874 /* TableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496B1A11D80B89300A92874 /* TableViewCell1.swift */; };
+		8496B1A41D80B89A00A92874 /* TableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496B1A31D80B89A00A92874 /* TableViewCell2.swift */; };
+		8496B1A61D80C21200A92874 /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496B1A51D80C21200A92874 /* SideMenuVC.swift */; };
+		8496EC361D1E83460090B900 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496EC351D1E83460090B900 /* SelectionViewController.swift */; };
+		84EE5A581D0830FC00DB3D08 /* PresistanceStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE5A571D0830FC00DB3D08 /* PresistanceStorage.swift */; };
+		8A0AEB82284F121D00B8C2FC /* LFE.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0AEB81284F121D00B8C2FC /* LFE.storyboard */; };
+		8A9B80E02859E4AB007E148D /* HOTACDocumentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9B80DF2859E4AB007E148D /* HOTACDocumentTableViewCell.swift */; };
+		8A9B80E22859E4DD007E148D /* HOTACViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9B80E12859E4DD007E148D /* HOTACViewController.swift */; };
+		960645C01CDD9AD200D5F466 /* FlightQueryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960645BF1CDD9AD200D5F466 /* FlightQueryViewController.swift */; };
+		960645CE1CDD9FE700D5F466 /* DownloadServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960645C91CDD9FE700D5F466 /* DownloadServices.swift */; };
+		960645CF1CDD9FE700D5F466 /* M13ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 960645CB1CDD9FE700D5F466 /* M13ProgressView.m */; };
+		960645D01CDD9FE700D5F466 /* M13ProgressViewRing.m in Sources */ = {isa = PBXBuildFile; fileRef = 960645CD1CDD9FE700D5F466 /* M13ProgressViewRing.m */; };
+		960645D21CDDA01600D5F466 /* DocumentServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960645D11CDDA01600D5F466 /* DocumentServices.swift */; };
+		960645D81CDDA06900D5F466 /* DocumentSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960645D51CDDA06900D5F466 /* DocumentSection.swift */; };
+		960645D91CDDA06900D5F466 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960645D61CDDA06900D5F466 /* Constants.swift */; };
+		960645DC1CDDBFA300D5F466 /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960645DB1CDDBFA300D5F466 /* Indicator.swift */; };
+		960645EA1CDE06D800D5F466 /* FlightQueryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960645E91CDE06D800D5F466 /* FlightQueryTableViewCell.swift */; };
+		960645F01CDE1B5300D5F466 /* webViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960645EF1CDE1B5300D5F466 /* webViewController.swift */; };
+		960645F21CDE7C2F00D5F466 /* FPFlightListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960645F11CDE7C2F00D5F466 /* FPFlightListTableViewCell.swift */; };
+		960645F41CDEC47100D5F466 /* ManualsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960645F31CDEC47100D5F466 /* ManualsViewController.swift */; };
+		960645F81CDEC5B000D5F466 /* ManualsDocumentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960645F71CDEC5B000D5F466 /* ManualsDocumentTableViewCell.swift */; };
+		9608D11C240BFE0400D9A2CC /* RealmAppParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9608D11B240BFE0400D9A2CC /* RealmAppParams.swift */; };
+		9608D11E240C1E0700D9A2CC /* WebRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9608D11D240C1E0700D9A2CC /* WebRequest.swift */; };
+		961253C01FF25D82001A85E3 /* UDutils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961253BF1FF25D82001A85E3 /* UDutils.swift */; };
+		961DF29228377FCC001DEFD0 /* ImagePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961DF29128377FCC001DEFD0 /* ImagePreviewViewController.swift */; };
+		961FBF3D1DBCD1BE00D487FC /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FBF3C1DBCD1BE00D487FC /* Checkbox.swift */; };
+		961FBF441DBFB1B800D487FC /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FBF431DBFB1B700D487FC /* AppConstants.swift */; };
+		961FBF5D1DC0C3EF00D487FC /* LegData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FBF591DC0C3EF00D487FC /* LegData+CoreDataClass.swift */; };
+		961FBF5E1DC0C3EF00D487FC /* LegData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FBF5A1DC0C3EF00D487FC /* LegData+CoreDataProperties.swift */; };
+		961FBF5F1DC0C3EF00D487FC /* CrewData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FBF5B1DC0C3EF00D487FC /* CrewData+CoreDataClass.swift */; };
+		961FBF601DC0C3EF00D487FC /* CrewData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FBF5C1DC0C3EF00D487FC /* CrewData+CoreDataProperties.swift */; };
+		9622A94820791B190037CF25 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9622A94720791B190037CF25 /* NetworkUtils.swift */; };
+		96410C571CCC9C28002739B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96410C561CCC9C28002739B5 /* AppDelegate.swift */; };
+		96410C591CCC9C28002739B5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96410C581CCC9C28002739B5 /* LoginViewController.swift */; };
+		96410C5C1CCC9C28002739B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96410C5A1CCC9C28002739B5 /* Main.storyboard */; };
+		96410C5F1CCC9C28002739B5 /* PIA_Crew_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 96410C5D1CCC9C28002739B5 /* PIA_Crew_App.xcdatamodeld */; };
+		96410C641CCC9C28002739B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96410C621CCC9C28002739B5 /* LaunchScreen.storyboard */; };
+		96410C6C1CD484C1002739B5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96410C6B1CD484C1002739B5 /* HomeViewController.swift */; };
+		96410C701CD4F098002739B5 /* FormsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96410C6F1CD4F098002739B5 /* FormsViewController.swift */; };
+		96410C761CD54ED9002739B5 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96410C751CD54ED8002739B5 /* TabBarViewController.swift */; };
+		96410C781CD5C749002739B5 /* FPFlightListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96410C771CD5C749002739B5 /* FPFlightListViewController.swift */; };
+		96410C7A1CD5FBBC002739B5 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96410C791CD5FBBC002739B5 /* StringUtils.swift */; };
+		96410C801CD63BE1002739B5 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 96410C7F1CD63BE1002739B5 /* Podfile */; };
+		96410C861CD64D77002739B5 /* MiscUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96410C851CD64D77002739B5 /* MiscUtils.swift */; };
+		9643608A1DC9D960000AA504 /* CheckVersionServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964360891DC9D960000AA504 /* CheckVersionServices.swift */; };
+		9665BA7123CC883C0044FC7F /* Books.xml in Resources */ = {isa = PBXBuildFile; fileRef = 9665BA7023CC883C0044FC7F /* Books.xml */; };
+		966EE26C1D0D699900D06C30 /* CrewRosterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EE26A1D0D699900D06C30 /* CrewRosterCollectionViewCell.swift */; };
+		966EE26D1D0D699900D06C30 /* CrewRosterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EE26B1D0D699900D06C30 /* CrewRosterViewController.swift */; };
+		966EE26F1D0D77D100D06C30 /* CrewRoster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EE26E1D0D77D100D06C30 /* CrewRoster.swift */; };
+		966EE2711D0D7BF300D06C30 /* RosterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EE2701D0D7BF300D06C30 /* RosterService.swift */; };
+		967A92BD23E9993C00AABC18 /* FPPlanListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A92BC23E9993C00AABC18 /* FPPlanListViewController.swift */; };
+		967A92BF23E9994B00AABC18 /* FPPlanListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A92BE23E9994B00AABC18 /* FPPlanListTableViewCell.swift */; };
+		967DE4AD1D27F5B100724B7F /* FlightLogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967DE4AC1D27F5B100724B7F /* FlightLogService.swift */; };
+		967DE4AF1D27F8A600724B7F /* FlightLogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967DE4AE1D27F8A600724B7F /* FlightLogModel.swift */; };
+		969A0BA41DC4C364008894C8 /* Crew+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A0BA31DC4C364008894C8 /* Crew+CoreDataClass.swift */; };
+		969D968E24233BE100F9ED0D /* DocNotificationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969D968D24233BE100F9ED0D /* DocNotificationUtils.swift */; };
+		96B0F3112412B3E00036DC38 /* AlertSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B0F3102412B3E00036DC38 /* AlertSection.swift */; };
+		96B0F316241499980036DC38 /* QualificationAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B0F315241499980036DC38 /* QualificationAlertVC.swift */; };
+		96B0F318241499B50036DC38 /* DocumentAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B0F317241499B50036DC38 /* DocumentAlertVC.swift */; };
+		96B0F31A24149EE30036DC38 /* BadgeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B0F31924149EE30036DC38 /* BadgeUtils.swift */; };
+		96CC5F8A23D8465300863E2E /* FPMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CC5F8923D8465300863E2E /* FPMainViewController.swift */; };
+		96D6ACFF274E4B7700158B48 /* LFEOEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D6ACFE274E4B7700158B48 /* LFEOEViewController.swift */; };
+		96D6AD0A2753BEE800158B48 /* LFESearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D6AD092753BEE800158B48 /* LFESearchViewController.swift */; };
+		96D6AD0D275491D800158B48 /* LFEDocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D6AD0C275491D700158B48 /* LFEDocumentViewController.swift */; };
+		96D6AD102754B6D800158B48 /* LFETabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D6AD0F2754B6D700158B48 /* LFETabBarViewController.swift */; };
+		96DABCEC20C42593006E98FA /* RealmObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DABCEB20C42593006E98FA /* RealmObjects.swift */; };
+		96E8160D1D1D70EE00773495 /* ApplicationSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E815FD1D1D70EE00773495 /* ApplicationSettingsViewController.swift */; };
+		96E8160E1D1D70EE00773495 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E815FE1D1D70EE00773495 /* AppSettings.swift */; };
+		96E8160F1D1D70EE00773495 /* CrewDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E815FF1D1D70EE00773495 /* CrewDetailsViewController.swift */; };
+		96E816101D1D70EE00773495 /* CrewDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E816001D1D70EE00773495 /* CrewDetailTableViewCell.swift */; };
+		96E816111D1D70EE00773495 /* EditCrewDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E816011D1D70EE00773495 /* EditCrewDataViewController.swift */; };
+		96E816121D1D70EE00773495 /* EditFuelDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E816021D1D70EE00773495 /* EditFuelDataViewController.swift */; };
+		96E816131D1D70EE00773495 /* FlightDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E816031D1D70EE00773495 /* FlightDetailsViewController.swift */; };
+		96E816141D1D70EE00773495 /* FlightListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E816041D1D70EE00773495 /* FlightListTableViewCell.swift */; };
+		96E816151D1D70EE00773495 /* FlightListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E816051D1D70EE00773495 /* FlightListTableViewController.swift */; };
+		96E816161D1D70EE00773495 /* FLTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E816061D1D70EE00773495 /* FLTabBarController.swift */; };
+		96E816171D1D70EE00773495 /* FuelDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E816071D1D70EE00773495 /* FuelDetailsTableViewCell.swift */; };
+		96E816181D1D70EE00773495 /* FuelDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E816081D1D70EE00773495 /* FuelDetailsViewController.swift */; };
+		96E816191D1D70EE00773495 /* MiscUtilsFltLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E816091D1D70EE00773495 /* MiscUtilsFltLog.swift */; };
+		96E8161A1D1D70EE00773495 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E8160A1D1D70EE00773495 /* SettingsTableViewCell.swift */; };
+		96E8161B1D1D70EE00773495 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E8160B1D1D70EE00773495 /* SettingsViewController.swift */; };
+		96E8161C1D1D70EE00773495 /* TabSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E8160C1D1D70EE00773495 /* TabSubViewController.swift */; };
+		96E8162E1D1D745100773495 /* Crew+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E8161F1D1D745100773495 /* Crew+CoreDataProperties.swift */; };
+		96E816301D1D745100773495 /* ACPackData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E816211D1D745100773495 /* ACPackData+CoreDataProperties.swift */; };
+		96E816311D1D745100773495 /* ACPackData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E816221D1D745100773495 /* ACPackData.swift */; };
+		96E816321D1D745100773495 /* FlightLog+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E816231D1D745100773495 /* FlightLog+CoreDataProperties.swift */; };
+		96E816331D1D745100773495 /* FlightLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E816241D1D745100773495 /* FlightLog.swift */; };
+		96E816341D1D745100773495 /* AppSetting+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E816251D1D745100773495 /* AppSetting+CoreDataProperties.swift */; };
+		96E816351D1D745100773495 /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E816261D1D745100773495 /* AppSetting.swift */; };
+		96E816451D1D84AC00773495 /* Document+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E8163B1D1D84AC00773495 /* Document+CoreDataProperties.swift */; };
+		96E816461D1D84AC00773495 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E8163C1D1D84AC00773495 /* Document.swift */; };
+		96E816471D1D84AC00773495 /* CrewMessage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E8163D1D1D84AC00773495 /* CrewMessage+CoreDataProperties.swift */; };
+		96E816481D1D84AC00773495 /* CrewMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E8163E1D1D84AC00773495 /* CrewMessage.swift */; };
+		96E816491D1D84AC00773495 /* FlightQueryLeg+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E8163F1D1D84AC00773495 /* FlightQueryLeg+CoreDataProperties.swift */; };
+		96E8164A1D1D84AC00773495 /* FlightQueryLeg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E816401D1D84AC00773495 /* FlightQueryLeg.swift */; };
+		96E8164B1D1D84AC00773495 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E816411D1D84AC00773495 /* User+CoreDataProperties.swift */; };
+		96E8164C1D1D84AC00773495 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E816421D1D84AC00773495 /* User.swift */; };
+		96E8164D1D1D84AC00773495 /* FlightPlan+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E816431D1D84AC00773495 /* FlightPlan+CoreDataProperties.swift */; };
+		96E8164E1D1D84AC00773495 /* FlightPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E816441D1D84AC00773495 /* FlightPlan.swift */; };
+		96F6A99E241E9D6A006E5929 /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F6A99D241E9D69006E5929 /* AlertVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		36B880BCD0E1E5982AEC1421 /* Pods_PIA_Crew_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PIA_Crew_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		840E4D8F1D80B02C00A82976 /* header.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = header.xib; sourceTree = "<group>"; };
+		840E4D911D80B0FB00A82976 /* FlightsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightsVC.swift; sourceTree = "<group>"; };
+		840E4D951D80B3C400A82976 /* Header1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Header1.xib; sourceTree = "<group>"; };
+		840E4D971D80B3E600A82976 /* header2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = header2.xib; sourceTree = "<group>"; };
+		841932521D0CA64F00A6CB3A /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		8424BE671D05C685005D1445 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		846978801D1C6D3600387B77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		847902541D0C38AB001064B0 /* FormsDocumentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormsDocumentTableViewCell.swift; sourceTree = "<group>"; };
+		8487AA3E1D04367100429651 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		8487AA401D04368000429651 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8487AA421D043BE700429651 /* MasterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewCell.swift; sourceTree = "<group>"; };
+		8496B19F1D80B88800A92874 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		8496B1A11D80B89300A92874 /* TableViewCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell1.swift; sourceTree = "<group>"; };
+		8496B1A31D80B89A00A92874 /* TableViewCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell2.swift; sourceTree = "<group>"; };
+		8496B1A51D80C21200A92874 /* SideMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
+		8496EC351D1E83460090B900 /* SelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
+		84EE5A571D0830FC00DB3D08 /* PresistanceStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresistanceStorage.swift; sourceTree = "<group>"; };
+		8A0AEB81284F121D00B8C2FC /* LFE.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LFE.storyboard; sourceTree = "<group>"; };
+		8A9B80DF2859E4AB007E148D /* HOTACDocumentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HOTACDocumentTableViewCell.swift; sourceTree = "<group>"; };
+		8A9B80E12859E4DD007E148D /* HOTACViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HOTACViewController.swift; sourceTree = "<group>"; };
+		960645BF1CDD9AD200D5F466 /* FlightQueryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = FlightQueryViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		960645C81CDD9FE700D5F466 /* PIA Crew App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PIA Crew App-Bridging-Header.h"; sourceTree = "<group>"; };
+		960645C91CDD9FE700D5F466 /* DownloadServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadServices.swift; sourceTree = "<group>"; };
+		960645CA1CDD9FE700D5F466 /* M13ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressView.h; sourceTree = "<group>"; };
+		960645CB1CDD9FE700D5F466 /* M13ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressView.m; sourceTree = "<group>"; };
+		960645CC1CDD9FE700D5F466 /* M13ProgressViewRing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewRing.h; sourceTree = "<group>"; };
+		960645CD1CDD9FE700D5F466 /* M13ProgressViewRing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewRing.m; sourceTree = "<group>"; };
+		960645D11CDDA01600D5F466 /* DocumentServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentServices.swift; sourceTree = "<group>"; };
+		960645D51CDDA06900D5F466 /* DocumentSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentSection.swift; sourceTree = "<group>"; };
+		960645D61CDDA06900D5F466 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		960645DB1CDDBFA300D5F466 /* Indicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
+		960645E91CDE06D800D5F466 /* FlightQueryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightQueryTableViewCell.swift; sourceTree = "<group>"; };
+		960645EF1CDE1B5300D5F466 /* webViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = webViewController.swift; sourceTree = "<group>"; };
+		960645F11CDE7C2F00D5F466 /* FPFlightListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPFlightListTableViewCell.swift; sourceTree = "<group>"; };
+		960645F31CDEC47100D5F466 /* ManualsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualsViewController.swift; sourceTree = "<group>"; };
+		960645F71CDEC5B000D5F466 /* ManualsDocumentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualsDocumentTableViewCell.swift; sourceTree = "<group>"; };
+		9608D11B240BFE0400D9A2CC /* RealmAppParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmAppParams.swift; sourceTree = SOURCE_ROOT; };
+		9608D11D240C1E0700D9A2CC /* WebRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRequest.swift; sourceTree = "<group>"; };
+		961253BF1FF25D82001A85E3 /* UDutils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDutils.swift; sourceTree = "<group>"; };
+		961DF29128377FCC001DEFD0 /* ImagePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewViewController.swift; sourceTree = "<group>"; };
+		961FBF3C1DBCD1BE00D487FC /* Checkbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
+		961FBF431DBFB1B700D487FC /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		961FBF591DC0C3EF00D487FC /* LegData+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LegData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		961FBF5A1DC0C3EF00D487FC /* LegData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LegData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		961FBF5B1DC0C3EF00D487FC /* CrewData+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CrewData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		961FBF5C1DC0C3EF00D487FC /* CrewData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CrewData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9622A94720791B190037CF25 /* NetworkUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
+		962F3E68210B6D1600F132AA /* PIA_Crew_App 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "PIA_Crew_App 2.xcdatamodel"; sourceTree = "<group>"; };
+		96410C531CCC9C28002739B5 /* PIA Crew App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PIA Crew App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96410C561CCC9C28002739B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		96410C581CCC9C28002739B5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		96410C5B1CCC9C28002739B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		96410C5E1CCC9C28002739B5 /* PIA_Crew_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PIA_Crew_App.xcdatamodel; sourceTree = "<group>"; };
+		96410C631CCC9C28002739B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		96410C651CCC9C28002739B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96410C6B1CD484C1002739B5 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		96410C6F1CD4F098002739B5 /* FormsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormsViewController.swift; sourceTree = "<group>"; };
+		96410C751CD54ED8002739B5 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		96410C771CD5C749002739B5 /* FPFlightListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = FPFlightListViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		96410C791CD5FBBC002739B5 /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
+		96410C7F1CD63BE1002739B5 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96410C851CD64D77002739B5 /* MiscUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MiscUtils.swift; path = ../MiscUtils.swift; sourceTree = "<group>"; };
+		964360891DC9D960000AA504 /* CheckVersionServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckVersionServices.swift; sourceTree = "<group>"; };
+		9665BA7023CC883C0044FC7F /* Books.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Books.xml; sourceTree = "<group>"; };
+		966EE26A1D0D699900D06C30 /* CrewRosterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrewRosterCollectionViewCell.swift; sourceTree = "<group>"; };
+		966EE26B1D0D699900D06C30 /* CrewRosterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrewRosterViewController.swift; sourceTree = "<group>"; };
+		966EE26E1D0D77D100D06C30 /* CrewRoster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrewRoster.swift; sourceTree = "<group>"; };
+		966EE2701D0D7BF300D06C30 /* RosterService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RosterService.swift; sourceTree = "<group>"; };
+		967A92BC23E9993C00AABC18 /* FPPlanListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPPlanListViewController.swift; sourceTree = "<group>"; };
+		967A92BE23E9994B00AABC18 /* FPPlanListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPPlanListTableViewCell.swift; sourceTree = "<group>"; };
+		967DE4AC1D27F5B100724B7F /* FlightLogService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightLogService.swift; sourceTree = "<group>"; };
+		967DE4AE1D27F8A600724B7F /* FlightLogModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightLogModel.swift; sourceTree = "<group>"; };
+		969A0BA31DC4C364008894C8 /* Crew+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Crew+CoreDataClass.swift"; sourceTree = "<group>"; };
+		969D968D24233BE100F9ED0D /* DocNotificationUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocNotificationUtils.swift; sourceTree = "<group>"; };
+		96B0F3102412B3E00036DC38 /* AlertSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertSection.swift; sourceTree = "<group>"; };
+		96B0F315241499980036DC38 /* QualificationAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualificationAlertVC.swift; sourceTree = "<group>"; };
+		96B0F317241499B50036DC38 /* DocumentAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentAlertVC.swift; sourceTree = "<group>"; };
+		96B0F31924149EE30036DC38 /* BadgeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeUtils.swift; sourceTree = "<group>"; };
+		96CC5F8923D8465300863E2E /* FPMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FPMainViewController.swift; path = Pods/FPMainViewController.swift; sourceTree = SOURCE_ROOT; };
+		96D6ACFE274E4B7700158B48 /* LFEOEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFEOEViewController.swift; sourceTree = "<group>"; };
+		96D6AD092753BEE800158B48 /* LFESearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFESearchViewController.swift; sourceTree = "<group>"; };
+		96D6AD0C275491D700158B48 /* LFEDocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFEDocumentViewController.swift; sourceTree = "<group>"; };
+		96D6AD0F2754B6D700158B48 /* LFETabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFETabBarViewController.swift; sourceTree = "<group>"; };
+		96DABCEB20C42593006E98FA /* RealmObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmObjects.swift; sourceTree = "<group>"; };
+		96E815FD1D1D70EE00773495 /* ApplicationSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationSettingsViewController.swift; sourceTree = "<group>"; };
+		96E815FE1D1D70EE00773495 /* AppSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		96E815FF1D1D70EE00773495 /* CrewDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrewDetailsViewController.swift; sourceTree = "<group>"; };
+		96E816001D1D70EE00773495 /* CrewDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrewDetailTableViewCell.swift; sourceTree = "<group>"; };
+		96E816011D1D70EE00773495 /* EditCrewDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditCrewDataViewController.swift; sourceTree = "<group>"; };
+		96E816021D1D70EE00773495 /* EditFuelDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditFuelDataViewController.swift; sourceTree = "<group>"; };
+		96E816031D1D70EE00773495 /* FlightDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightDetailsViewController.swift; sourceTree = "<group>"; };
+		96E816041D1D70EE00773495 /* FlightListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightListTableViewCell.swift; sourceTree = "<group>"; };
+		96E816051D1D70EE00773495 /* FlightListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightListTableViewController.swift; sourceTree = "<group>"; };
+		96E816061D1D70EE00773495 /* FLTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLTabBarController.swift; sourceTree = "<group>"; };
+		96E816071D1D70EE00773495 /* FuelDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuelDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		96E816081D1D70EE00773495 /* FuelDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuelDetailsViewController.swift; sourceTree = "<group>"; };
+		96E816091D1D70EE00773495 /* MiscUtilsFltLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiscUtilsFltLog.swift; sourceTree = "<group>"; };
+		96E8160A1D1D70EE00773495 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		96E8160B1D1D70EE00773495 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		96E8160C1D1D70EE00773495 /* TabSubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabSubViewController.swift; sourceTree = "<group>"; };
+		96E8161F1D1D745100773495 /* Crew+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Crew+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		96E816211D1D745100773495 /* ACPackData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ACPackData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		96E816221D1D745100773495 /* ACPackData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACPackData.swift; sourceTree = "<group>"; };
+		96E816231D1D745100773495 /* FlightLog+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FlightLog+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		96E816241D1D745100773495 /* FlightLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightLog.swift; sourceTree = "<group>"; };
+		96E816251D1D745100773495 /* AppSetting+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppSetting+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		96E816261D1D745100773495 /* AppSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSetting.swift; sourceTree = "<group>"; };
+		96E8163B1D1D84AC00773495 /* Document+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Document+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		96E8163C1D1D84AC00773495 /* Document.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		96E8163D1D1D84AC00773495 /* CrewMessage+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CrewMessage+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		96E8163E1D1D84AC00773495 /* CrewMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrewMessage.swift; sourceTree = "<group>"; };
+		96E8163F1D1D84AC00773495 /* FlightQueryLeg+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FlightQueryLeg+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		96E816401D1D84AC00773495 /* FlightQueryLeg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightQueryLeg.swift; sourceTree = "<group>"; };
+		96E816411D1D84AC00773495 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		96E816421D1D84AC00773495 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		96E816431D1D84AC00773495 /* FlightPlan+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FlightPlan+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		96E816441D1D84AC00773495 /* FlightPlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightPlan.swift; sourceTree = "<group>"; };
+		96F6A99D241E9D69006E5929 /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
+		B548138E9A67533E011BCD54 /* Pods-PIA Crew App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PIA Crew App.release.xcconfig"; path = "Pods/Target Support Files/Pods-PIA Crew App/Pods-PIA Crew App.release.xcconfig"; sourceTree = "<group>"; };
+		BEBBBB91EB6545E4B3DF96ED /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFE50FE061D2F1BF4762063F /* Pods-PIA Crew App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PIA Crew App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PIA Crew App/Pods-PIA Crew App.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96410C501CCC9C28002739B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F739D0E0AD7394E552BEE7F /* Pods_PIA_Crew_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25457B7E8F37E3BEEADBF435 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFE50FE061D2F1BF4762063F /* Pods-PIA Crew App.debug.xcconfig */,
+				B548138E9A67533E011BCD54 /* Pods-PIA Crew App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		840280DD1D0B5F9500D6FD3F /* Flight Plan */ = {
+			isa = PBXGroup;
+			children = (
+				96CC5F8923D8465300863E2E /* FPMainViewController.swift */,
+				96410C771CD5C749002739B5 /* FPFlightListViewController.swift */,
+				967A92BC23E9993C00AABC18 /* FPPlanListViewController.swift */,
+				960645F11CDE7C2F00D5F466 /* FPFlightListTableViewCell.swift */,
+				967A92BE23E9994B00AABC18 /* FPPlanListTableViewCell.swift */,
+			);
+			name = "Flight Plan";
+			sourceTree = "<group>";
+		};
+		840280DE1D0B5FAA00D6FD3F /* Flight Query */ = {
+			isa = PBXGroup;
+			children = (
+				960645BF1CDD9AD200D5F466 /* FlightQueryViewController.swift */,
+				960645E91CDE06D800D5F466 /* FlightQueryTableViewCell.swift */,
+			);
+			name = "Flight Query";
+			sourceTree = "<group>";
+		};
+		840280DF1D0B69D500D6FD3F /* Manuals */ = {
+			isa = PBXGroup;
+			children = (
+				960645F31CDEC47100D5F466 /* ManualsViewController.swift */,
+				960645F71CDEC5B000D5F466 /* ManualsDocumentTableViewCell.swift */,
+			);
+			name = Manuals;
+			sourceTree = "<group>";
+		};
+		841932511D0CA62E00A6CB3A /* App feedback */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "App feedback";
+			sourceTree = "<group>";
+		};
+		84660A8A1D08A11C0089BC61 /* Crew Messages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Crew Messages";
+			sourceTree = "<group>";
+		};
+		8487AA3B1D04361200429651 /* Bulletins Circulars */ = {
+			isa = PBXGroup;
+			children = (
+				8487AA3E1D04367100429651 /* MasterViewController.swift */,
+				8487AA421D043BE700429651 /* MasterTableViewCell.swift */,
+				8487AA401D04368000429651 /* DetailViewController.swift */,
+				8424BE671D05C685005D1445 /* DetailTableViewCell.swift */,
+			);
+			name = "Bulletins Circulars";
+			sourceTree = "<group>";
+		};
+		8496B19E1D80B86100A92874 /* popView */ = {
+			isa = PBXGroup;
+			children = (
+				841932521D0CA64F00A6CB3A /* FeedbackViewController.swift */,
+				840E4D911D80B0FB00A82976 /* FlightsVC.swift */,
+				8496B1A31D80B89A00A92874 /* TableViewCell2.swift */,
+				8496B19F1D80B88800A92874 /* TableViewCell.swift */,
+				840E4D8F1D80B02C00A82976 /* header.xib */,
+				840E4D951D80B3C400A82976 /* Header1.xib */,
+				840E4D971D80B3E600A82976 /* header2.xib */,
+				8496B1A11D80B89300A92874 /* TableViewCell1.swift */,
+			);
+			name = popView;
+			sourceTree = "<group>";
+		};
+		8496B1A71D80C22100A92874 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				8496B1A51D80C21200A92874 /* SideMenuVC.swift */,
+			);
+			name = SideMenu;
+			sourceTree = "<group>";
+		};
+		8496EC341D1E832F0090B900 /* Apps selection */ = {
+			isa = PBXGroup;
+			children = (
+				8496EC351D1E83460090B900 /* SelectionViewController.swift */,
+			);
+			name = "Apps selection";
+			sourceTree = "<group>";
+		};
+		8496EC381D1E9A520090B900 /* FlightList */ = {
+			isa = PBXGroup;
+			children = (
+				96E816041D1D70EE00773495 /* FlightListTableViewCell.swift */,
+				96E816051D1D70EE00773495 /* FlightListTableViewController.swift */,
+			);
+			name = FlightList;
+			sourceTree = "<group>";
+		};
+		8496EC391D1EF26B0090B900 /* FlightDetails */ = {
+			isa = PBXGroup;
+			children = (
+				96E816031D1D70EE00773495 /* FlightDetailsViewController.swift */,
+			);
+			name = FlightDetails;
+			sourceTree = "<group>";
+		};
+		8496EC3A1D1F282B0090B900 /* Crew Details */ = {
+			isa = PBXGroup;
+			children = (
+				96E816001D1D70EE00773495 /* CrewDetailTableViewCell.swift */,
+				96E815FF1D1D70EE00773495 /* CrewDetailsViewController.swift */,
+				96E816011D1D70EE00773495 /* EditCrewDataViewController.swift */,
+			);
+			name = "Crew Details";
+			sourceTree = "<group>";
+		};
+		8496EC3B1D1F48C90090B900 /* Tecnichal Details */ = {
+			isa = PBXGroup;
+			children = (
+				96E816071D1D70EE00773495 /* FuelDetailsTableViewCell.swift */,
+				96E816081D1D70EE00773495 /* FuelDetailsViewController.swift */,
+				96E816021D1D70EE00773495 /* EditFuelDataViewController.swift */,
+			);
+			name = "Tecnichal Details";
+			sourceTree = "<group>";
+		};
+		84D7B7301D0C1E4F00257886 /* Forms */ = {
+			isa = PBXGroup;
+			children = (
+				96410C6F1CD4F098002739B5 /* FormsViewController.swift */,
+				847902541D0C38AB001064B0 /* FormsDocumentTableViewCell.swift */,
+			);
+			name = Forms;
+			sourceTree = "<group>";
+		};
+		8A9B80DE2859E476007E148D /* HOTAC */ = {
+			isa = PBXGroup;
+			children = (
+				8A9B80E12859E4DD007E148D /* HOTACViewController.swift */,
+				8A9B80DF2859E4AB007E148D /* HOTACDocumentTableViewCell.swift */,
+			);
+			name = HOTAC;
+			sourceTree = "<group>";
+		};
+		960645C31CDD9F8700D5F466 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				96FA610C1CDF12CB000BFE43 /* Utils */,
+				960645DB1CDDBFA300D5F466 /* Indicator.swift */,
+				960645CA1CDD9FE700D5F466 /* M13ProgressView.h */,
+				960645CB1CDD9FE700D5F466 /* M13ProgressView.m */,
+				960645CC1CDD9FE700D5F466 /* M13ProgressViewRing.h */,
+				960645CD1CDD9FE700D5F466 /* M13ProgressViewRing.m */,
+				960645C81CDD9FE700D5F466 /* PIA Crew App-Bridging-Header.h */,
+				960645C71CDD9FA800D5F466 /* Services */,
+				960645C41CDD9F9000D5F466 /* Model */,
+				964360891DC9D960000AA504 /* CheckVersionServices.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		960645C41CDD9F9000D5F466 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				96B0F3102412B3E00036DC38 /* AlertSection.swift */,
+				960645D51CDDA06900D5F466 /* DocumentSection.swift */,
+				960645D61CDDA06900D5F466 /* Constants.swift */,
+				966EE26E1D0D77D100D06C30 /* CrewRoster.swift */,
+				967DE4AE1D27F8A600724B7F /* FlightLogModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		960645C71CDD9FA800D5F466 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				960645D11CDDA01600D5F466 /* DocumentServices.swift */,
+				960645C91CDD9FE700D5F466 /* DownloadServices.swift */,
+				966EE2701D0D7BF300D06C30 /* RosterService.swift */,
+				967DE4AC1D27F5B100724B7F /* FlightLogService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		961FBF421DBCD2CB00D487FC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				846978801D1C6D3600387B77 /* Assets.xcassets */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		96410C4A1CCC9C27002739B5 = {
+			isa = PBXGroup;
+			children = (
+				96D6AD0F2754B6D700158B48 /* LFETabBarViewController.swift */,
+				96D6AD0C275491D700158B48 /* LFEDocumentViewController.swift */,
+				96410C7F1CD63BE1002739B5 /* Podfile */,
+				96410C551CCC9C28002739B5 /* PIA Crew App */,
+				96410C541CCC9C28002739B5 /* Products */,
+				BEEB79D6D22E3958B23903DC /* Frameworks */,
+				25457B7E8F37E3BEEADBF435 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		96410C541CCC9C28002739B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96410C531CCC9C28002739B5 /* PIA Crew App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96410C551CCC9C28002739B5 /* PIA Crew App */ = {
+			isa = PBXGroup;
+			children = (
+				8A9B80DE2859E476007E148D /* HOTAC */,
+				961DF29128377FCC001DEFD0 /* ImagePreviewViewController.swift */,
+				96D6ACFD274E4B3700158B48 /* LFE */,
+				96B0F314241498BB0036DC38 /* Alert */,
+				9608D11B240BFE0400D9A2CC /* RealmAppParams.swift */,
+				96A4F5C722B6061700E62125 /* Crew Roster */,
+				961FBF421DBCD2CB00D487FC /* Support Files */,
+				96E8163B1D1D84AC00773495 /* Document+CoreDataProperties.swift */,
+				96E8163C1D1D84AC00773495 /* Document.swift */,
+				96E8163D1D1D84AC00773495 /* CrewMessage+CoreDataProperties.swift */,
+				96E8163E1D1D84AC00773495 /* CrewMessage.swift */,
+				96E8163F1D1D84AC00773495 /* FlightQueryLeg+CoreDataProperties.swift */,
+				96E816401D1D84AC00773495 /* FlightQueryLeg.swift */,
+				96E816411D1D84AC00773495 /* User+CoreDataProperties.swift */,
+				96E816421D1D84AC00773495 /* User.swift */,
+				96E816431D1D84AC00773495 /* FlightPlan+CoreDataProperties.swift */,
+				96E816441D1D84AC00773495 /* FlightPlan.swift */,
+				960645EF1CDE1B5300D5F466 /* webViewController.swift */,
+				96E815FC1D1D70DC00773495 /* FlightLogApp */,
+				8496EC341D1E832F0090B900 /* Apps selection */,
+				966EE2671D0CFF4500D06C30 /* Login */,
+				966EE2661D0CFF0100D06C30 /* Home */,
+				840280DF1D0B69D500D6FD3F /* Manuals */,
+				84D7B7301D0C1E4F00257886 /* Forms */,
+				960645C31CDD9F8700D5F466 /* API */,
+				840280DE1D0B5FAA00D6FD3F /* Flight Query */,
+				840280DD1D0B5F9500D6FD3F /* Flight Plan */,
+				8487AA3B1D04361200429651 /* Bulletins Circulars */,
+				84660A8A1D08A11C0089BC61 /* Crew Messages */,
+				841932511D0CA62E00A6CB3A /* App feedback */,
+				96410C561CCC9C28002739B5 /* AppDelegate.swift */,
+				8496B1A71D80C22100A92874 /* SideMenu */,
+				8496B19E1D80B86100A92874 /* popView */,
+				96410C5A1CCC9C28002739B5 /* Main.storyboard */,
+				8A0AEB81284F121D00B8C2FC /* LFE.storyboard */,
+				96410C621CCC9C28002739B5 /* LaunchScreen.storyboard */,
+				96410C651CCC9C28002739B5 /* Info.plist */,
+				96410C5D1CCC9C28002739B5 /* PIA_Crew_App.xcdatamodeld */,
+				96410C751CD54ED8002739B5 /* TabBarViewController.swift */,
+				961FBF3C1DBCD1BE00D487FC /* Checkbox.swift */,
+				9665BA7023CC883C0044FC7F /* Books.xml */,
+			);
+			path = "PIA Crew App";
+			sourceTree = "<group>";
+		};
+		966EE2661D0CFF0100D06C30 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				96410C6B1CD484C1002739B5 /* HomeViewController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		966EE2671D0CFF4500D06C30 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				96410C581CCC9C28002739B5 /* LoginViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		96A4F5C722B6061700E62125 /* Crew Roster */ = {
+			isa = PBXGroup;
+			children = (
+				966EE26A1D0D699900D06C30 /* CrewRosterCollectionViewCell.swift */,
+				966EE26B1D0D699900D06C30 /* CrewRosterViewController.swift */,
+			);
+			name = "Crew Roster";
+			sourceTree = "<group>";
+		};
+		96B0F314241498BB0036DC38 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				96B0F315241499980036DC38 /* QualificationAlertVC.swift */,
+				96B0F317241499B50036DC38 /* DocumentAlertVC.swift */,
+				96F6A99D241E9D69006E5929 /* AlertVC.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		96D6ACFD274E4B3700158B48 /* LFE */ = {
+			isa = PBXGroup;
+			children = (
+				96D6ACFE274E4B7700158B48 /* LFEOEViewController.swift */,
+				96D6AD092753BEE800158B48 /* LFESearchViewController.swift */,
+			);
+			name = LFE;
+			sourceTree = "<group>";
+		};
+		96E815FC1D1D70DC00773495 /* FlightLogApp */ = {
+			isa = PBXGroup;
+			children = (
+				969A0BA31DC4C364008894C8 /* Crew+CoreDataClass.swift */,
+				961FBF591DC0C3EF00D487FC /* LegData+CoreDataClass.swift */,
+				961FBF5A1DC0C3EF00D487FC /* LegData+CoreDataProperties.swift */,
+				961FBF5B1DC0C3EF00D487FC /* CrewData+CoreDataClass.swift */,
+				961FBF5C1DC0C3EF00D487FC /* CrewData+CoreDataProperties.swift */,
+				8496EC381D1E9A520090B900 /* FlightList */,
+				8496EC391D1EF26B0090B900 /* FlightDetails */,
+				8496EC3A1D1F282B0090B900 /* Crew Details */,
+				8496EC3B1D1F48C90090B900 /* Tecnichal Details */,
+				96E8161F1D1D745100773495 /* Crew+CoreDataProperties.swift */,
+				96E816211D1D745100773495 /* ACPackData+CoreDataProperties.swift */,
+				96E816231D1D745100773495 /* FlightLog+CoreDataProperties.swift */,
+				96E816221D1D745100773495 /* ACPackData.swift */,
+				96E816241D1D745100773495 /* FlightLog.swift */,
+				96E816251D1D745100773495 /* AppSetting+CoreDataProperties.swift */,
+				96E816261D1D745100773495 /* AppSetting.swift */,
+				96E815FD1D1D70EE00773495 /* ApplicationSettingsViewController.swift */,
+				96E815FE1D1D70EE00773495 /* AppSettings.swift */,
+				96E816061D1D70EE00773495 /* FLTabBarController.swift */,
+				96E816091D1D70EE00773495 /* MiscUtilsFltLog.swift */,
+				96E8160A1D1D70EE00773495 /* SettingsTableViewCell.swift */,
+				96E8160B1D1D70EE00773495 /* SettingsViewController.swift */,
+				96E8160C1D1D70EE00773495 /* TabSubViewController.swift */,
+				961FBF431DBFB1B700D487FC /* AppConstants.swift */,
+			);
+			name = FlightLogApp;
+			sourceTree = "<group>";
+		};
+		96FA610C1CDF12CB000BFE43 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				96DABCEB20C42593006E98FA /* RealmObjects.swift */,
+				96410C851CD64D77002739B5 /* MiscUtils.swift */,
+				96410C791CD5FBBC002739B5 /* StringUtils.swift */,
+				84EE5A571D0830FC00DB3D08 /* PresistanceStorage.swift */,
+				961253BF1FF25D82001A85E3 /* UDutils.swift */,
+				9622A94720791B190037CF25 /* NetworkUtils.swift */,
+				9608D11D240C1E0700D9A2CC /* WebRequest.swift */,
+				96B0F31924149EE30036DC38 /* BadgeUtils.swift */,
+				969D968D24233BE100F9ED0D /* DocNotificationUtils.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		BEEB79D6D22E3958B23903DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEBBBB91EB6545E4B3DF96ED /* Pods.framework */,
+				36B880BCD0E1E5982AEC1421 /* Pods_PIA_Crew_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96410C521CCC9C28002739B5 /* PIA Crew App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96410C681CCC9C28002739B5 /* Build configuration list for PBXNativeTarget "PIA Crew App" */;
+			buildPhases = (
+				C8E13A712A353220ADC86F4F /* [CP] Check Pods Manifest.lock */,
+				96410C4F1CCC9C28002739B5 /* Sources */,
+				96410C501CCC9C28002739B5 /* Frameworks */,
+				96410C511CCC9C28002739B5 /* Resources */,
+				8D18DA5EF1624EF093AC22C7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PIA Crew App";
+			productName = "PIA Crew App";
+			productReference = 96410C531CCC9C28002739B5 /* PIA Crew App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96410C4B1CCC9C27002739B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0730;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 1300;
+				ORGANIZATIONNAME = "Naveed Azhar";
+				TargetAttributes = {
+					96410C521CCC9C28002739B5 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = CF5AKFN9L8;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 96410C4E1CCC9C27002739B5 /* Build configuration list for PBXProject "PIA Crew App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96410C4A1CCC9C27002739B5;
+			productRefGroup = 96410C541CCC9C28002739B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96410C521CCC9C28002739B5 /* PIA Crew App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96410C511CCC9C28002739B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A0AEB82284F121D00B8C2FC /* LFE.storyboard in Resources */,
+				96410C641CCC9C28002739B5 /* LaunchScreen.storyboard in Resources */,
+				96410C801CD63BE1002739B5 /* Podfile in Resources */,
+				840E4D961D80B3C400A82976 /* Header1.xib in Resources */,
+				846978811D1C6D3600387B77 /* Assets.xcassets in Resources */,
+				840E4D901D80B02C00A82976 /* header.xib in Resources */,
+				840E4D981D80B3E600A82976 /* header2.xib in Resources */,
+				9665BA7123CC883C0044FC7F /* Books.xml in Resources */,
+				96410C5C1CCC9C28002739B5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D18DA5EF1624EF093AC22C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PIA Crew App/Pods-PIA Crew App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/M13Checkbox/M13Checkbox.framework",
+				"${BUILT_PRODUCTS_DIR}/MRProgress/MRProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SpringIndicator/SpringIndicator.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyXMLParser/SwiftyXMLParser.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/M13Checkbox.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MRProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SpringIndicator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyXMLParser.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PIA Crew App/Pods-PIA Crew App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8E13A712A353220ADC86F4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PIA Crew App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96410C4F1CCC9C28002739B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A9B80E02859E4AB007E148D /* HOTACDocumentTableViewCell.swift in Sources */,
+				96B0F318241499B50036DC38 /* DocumentAlertVC.swift in Sources */,
+				960645D21CDDA01600D5F466 /* DocumentServices.swift in Sources */,
+				966EE26C1D0D699900D06C30 /* CrewRosterCollectionViewCell.swift in Sources */,
+				961FBF441DBFB1B800D487FC /* AppConstants.swift in Sources */,
+				961FBF5E1DC0C3EF00D487FC /* LegData+CoreDataProperties.swift in Sources */,
+				96E8164A1D1D84AC00773495 /* FlightQueryLeg.swift in Sources */,
+				840E4D921D80B0FB00A82976 /* FlightsVC.swift in Sources */,
+				96E8164E1D1D84AC00773495 /* FlightPlan.swift in Sources */,
+				96410C701CD4F098002739B5 /* FormsViewController.swift in Sources */,
+				96D6AD0D275491D800158B48 /* LFEDocumentViewController.swift in Sources */,
+				960645F41CDEC47100D5F466 /* ManualsViewController.swift in Sources */,
+				966EE26D1D0D699900D06C30 /* CrewRosterViewController.swift in Sources */,
+				847902551D0C38AB001064B0 /* FormsDocumentTableViewCell.swift in Sources */,
+				96E816491D1D84AC00773495 /* FlightQueryLeg+CoreDataProperties.swift in Sources */,
+				96E816481D1D84AC00773495 /* CrewMessage.swift in Sources */,
+				969D968E24233BE100F9ED0D /* DocNotificationUtils.swift in Sources */,
+				96B0F3112412B3E00036DC38 /* AlertSection.swift in Sources */,
+				960645EA1CDE06D800D5F466 /* FlightQueryTableViewCell.swift in Sources */,
+				9643608A1DC9D960000AA504 /* CheckVersionServices.swift in Sources */,
+				961FBF601DC0C3EF00D487FC /* CrewData+CoreDataProperties.swift in Sources */,
+				96E816181D1D70EE00773495 /* FuelDetailsViewController.swift in Sources */,
+				96E816151D1D70EE00773495 /* FlightListTableViewController.swift in Sources */,
+				96D6AD0A2753BEE800158B48 /* LFESearchViewController.swift in Sources */,
+				96410C591CCC9C28002739B5 /* LoginViewController.swift in Sources */,
+				96410C761CD54ED9002739B5 /* TabBarViewController.swift in Sources */,
+				96E816101D1D70EE00773495 /* CrewDetailTableViewCell.swift in Sources */,
+				96DABCEC20C42593006E98FA /* RealmObjects.swift in Sources */,
+				8496B1A41D80B89A00A92874 /* TableViewCell2.swift in Sources */,
+				96410C861CD64D77002739B5 /* MiscUtils.swift in Sources */,
+				966EE2711D0D7BF300D06C30 /* RosterService.swift in Sources */,
+				8496EC361D1E83460090B900 /* SelectionViewController.swift in Sources */,
+				96E816131D1D70EE00773495 /* FlightDetailsViewController.swift in Sources */,
+				96E816171D1D70EE00773495 /* FuelDetailsTableViewCell.swift in Sources */,
+				960645D81CDDA06900D5F466 /* DocumentSection.swift in Sources */,
+				8A9B80E22859E4DD007E148D /* HOTACViewController.swift in Sources */,
+				96E8164C1D1D84AC00773495 /* User.swift in Sources */,
+				967DE4AF1D27F8A600724B7F /* FlightLogModel.swift in Sources */,
+				96E8162E1D1D745100773495 /* Crew+CoreDataProperties.swift in Sources */,
+				96410C781CD5C749002739B5 /* FPFlightListViewController.swift in Sources */,
+				969A0BA41DC4C364008894C8 /* Crew+CoreDataClass.swift in Sources */,
+				960645D01CDD9FE700D5F466 /* M13ProgressViewRing.m in Sources */,
+				8487AA431D043BE700429651 /* MasterTableViewCell.swift in Sources */,
+				960645F21CDE7C2F00D5F466 /* FPFlightListTableViewCell.swift in Sources */,
+				96F6A99E241E9D6A006E5929 /* AlertVC.swift in Sources */,
+				8424BE681D05C685005D1445 /* DetailTableViewCell.swift in Sources */,
+				960645DC1CDDBFA300D5F466 /* Indicator.swift in Sources */,
+				96E816351D1D745100773495 /* AppSetting.swift in Sources */,
+				96E8164D1D1D84AC00773495 /* FlightPlan+CoreDataProperties.swift in Sources */,
+				96E816461D1D84AC00773495 /* Document.swift in Sources */,
+				96410C571CCC9C28002739B5 /* AppDelegate.swift in Sources */,
+				96410C7A1CD5FBBC002739B5 /* StringUtils.swift in Sources */,
+				96B0F316241499980036DC38 /* QualificationAlertVC.swift in Sources */,
+				96E816341D1D745100773495 /* AppSetting+CoreDataProperties.swift in Sources */,
+				960645CF1CDD9FE700D5F466 /* M13ProgressView.m in Sources */,
+				96E816471D1D84AC00773495 /* CrewMessage+CoreDataProperties.swift in Sources */,
+				966EE26F1D0D77D100D06C30 /* CrewRoster.swift in Sources */,
+				8496B1A21D80B89300A92874 /* TableViewCell1.swift in Sources */,
+				96E8161C1D1D70EE00773495 /* TabSubViewController.swift in Sources */,
+				9608D11C240BFE0400D9A2CC /* RealmAppParams.swift in Sources */,
+				961253C01FF25D82001A85E3 /* UDutils.swift in Sources */,
+				96E816331D1D745100773495 /* FlightLog.swift in Sources */,
+				96B0F31A24149EE30036DC38 /* BadgeUtils.swift in Sources */,
+				960645F81CDEC5B000D5F466 /* ManualsDocumentTableViewCell.swift in Sources */,
+				8496B1A61D80C21200A92874 /* SideMenuVC.swift in Sources */,
+				96E816121D1D70EE00773495 /* EditFuelDataViewController.swift in Sources */,
+				960645C01CDD9AD200D5F466 /* FlightQueryViewController.swift in Sources */,
+				9622A94820791B190037CF25 /* NetworkUtils.swift in Sources */,
+				96E816191D1D70EE00773495 /* MiscUtilsFltLog.swift in Sources */,
+				960645CE1CDD9FE700D5F466 /* DownloadServices.swift in Sources */,
+				96E8161B1D1D70EE00773495 /* SettingsViewController.swift in Sources */,
+				96E816141D1D70EE00773495 /* FlightListTableViewCell.swift in Sources */,
+				96D6AD102754B6D800158B48 /* LFETabBarViewController.swift in Sources */,
+				961FBF5D1DC0C3EF00D487FC /* LegData+CoreDataClass.swift in Sources */,
+				96CC5F8A23D8465300863E2E /* FPMainViewController.swift in Sources */,
+				96E816321D1D745100773495 /* FlightLog+CoreDataProperties.swift in Sources */,
+				967A92BF23E9994B00AABC18 /* FPPlanListTableViewCell.swift in Sources */,
+				961DF29228377FCC001DEFD0 /* ImagePreviewViewController.swift in Sources */,
+				8487AA411D04368000429651 /* DetailViewController.swift in Sources */,
+				96E8160D1D1D70EE00773495 /* ApplicationSettingsViewController.swift in Sources */,
+				96410C5F1CCC9C28002739B5 /* PIA_Crew_App.xcdatamodeld in Sources */,
+				967A92BD23E9993C00AABC18 /* FPPlanListViewController.swift in Sources */,
+				8496B1A01D80B88800A92874 /* TableViewCell.swift in Sources */,
+				96E8160F1D1D70EE00773495 /* CrewDetailsViewController.swift in Sources */,
+				96410C6C1CD484C1002739B5 /* HomeViewController.swift in Sources */,
+				841932531D0CA64F00A6CB3A /* FeedbackViewController.swift in Sources */,
+				96E8160E1D1D70EE00773495 /* AppSettings.swift in Sources */,
+				96E816451D1D84AC00773495 /* Document+CoreDataProperties.swift in Sources */,
+				960645F01CDE1B5300D5F466 /* webViewController.swift in Sources */,
+				96D6ACFF274E4B7700158B48 /* LFEOEViewController.swift in Sources */,
+				8487AA3F1D04367100429651 /* MasterViewController.swift in Sources */,
+				96E816311D1D745100773495 /* ACPackData.swift in Sources */,
+				961FBF3D1DBCD1BE00D487FC /* Checkbox.swift in Sources */,
+				967DE4AD1D27F5B100724B7F /* FlightLogService.swift in Sources */,
+				84EE5A581D0830FC00DB3D08 /* PresistanceStorage.swift in Sources */,
+				9608D11E240C1E0700D9A2CC /* WebRequest.swift in Sources */,
+				96E8161A1D1D70EE00773495 /* SettingsTableViewCell.swift in Sources */,
+				96E816301D1D745100773495 /* ACPackData+CoreDataProperties.swift in Sources */,
+				96E8164B1D1D84AC00773495 /* User+CoreDataProperties.swift in Sources */,
+				960645D91CDDA06900D5F466 /* Constants.swift in Sources */,
+				96E816111D1D70EE00773495 /* EditCrewDataViewController.swift in Sources */,
+				961FBF5F1DC0C3EF00D487FC /* CrewData+CoreDataClass.swift in Sources */,
+				96E816161D1D70EE00773495 /* FLTabBarController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		96410C5A1CCC9C28002739B5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96410C5B1CCC9C28002739B5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		96410C621CCC9C28002739B5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96410C631CCC9C28002739B5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96410C661CCC9C28002739B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Pakistan International Airlines Corporation (CF5AKFN9L8)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		96410C671CCC9C28002739B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Pakistan International Airlines Corporation (CF5AKFN9L8)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96410C691CCC9C28002739B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFE50FE061D2F1BF4762063F /* Pods-PIA Crew App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CF5AKFN9L8;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				INFOPLIST_FILE = "PIA Crew App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.5.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pia.mydigitalCrew;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PIA Crew App/PIA Crew App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		96410C6A1CCC9C28002739B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B548138E9A67533E011BCD54 /* Pods-PIA Crew App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CF5AKFN9L8;
+				EXCLUDED_ARCHS = "";
+				INFOPLIST_FILE = "PIA Crew App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.5.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pia.mydigitalCrew;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PIA Crew App/PIA Crew App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96410C4E1CCC9C27002739B5 /* Build configuration list for PBXProject "PIA Crew App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96410C661CCC9C28002739B5 /* Debug */,
+				96410C671CCC9C28002739B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96410C681CCC9C28002739B5 /* Build configuration list for PBXNativeTarget "PIA Crew App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96410C691CCC9C28002739B5 /* Debug */,
+				96410C6A1CCC9C28002739B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		96410C5D1CCC9C28002739B5 /* PIA_Crew_App.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				962F3E68210B6D1600F132AA /* PIA_Crew_App 2.xcdatamodel */,
+				96410C5E1CCC9C28002739B5 /* PIA_Crew_App.xcdatamodel */,
+			);
+			currentVersion = 962F3E68210B6D1600F132AA /* PIA_Crew_App 2.xcdatamodel */;
+			path = PIA_Crew_App.xcdatamodeld;
+			sourceTree = "<group>";
+			usesTabs = 0;
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 96410C4B1CCC9C27002739B5 /* Project object */;
+}
